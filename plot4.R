@@ -13,7 +13,6 @@ plot(newHousehold$Timestamp, newHousehold$Global_active_power, type="l", cex.lab
 
 plot(newHousehold$Timestamp, newHousehold$Voltage, type="l", cex.lab=0.75, cex.axis=0.75, xlab="datetime", ylab = 'Voltage')
 
-
 plot(newHousehold$Timestamp,  newHousehold$Sub_metering_1, type="l", cex.lab=0.75, cex.axis=0.75 , xlab="", ylab = "Enery Sub Metering")
 lines(newHousehold$Timestamp,  newHousehold$Sub_metering_2, col = "red")
 lines(newHousehold$Timestamp,  newHousehold$Sub_metering_3, col = "blue")
@@ -25,4 +24,3 @@ plot(newHousehold$Timestamp, newHousehold$Global_reactive_power, type="l", cex.l
 ##Exporting the file to PNG
 dev.copy(png, file = "plot4.png", width = 480, height = 480) ## Copy plot to a PNG file
 dev.off() ## Closing the PNG device
-

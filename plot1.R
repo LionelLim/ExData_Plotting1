@@ -13,3 +13,4 @@ hist(newHousehold$Global_active_power,col = 'red', cex.main=0.75, cex.lab=0.75, 
 ##Exporting the file to PNG
 dev.copy(png, file = "plot1.png", width = 480, height = 480) ## Copy plot to a PNG file
 dev.off() ## Closing the PNG device
+
